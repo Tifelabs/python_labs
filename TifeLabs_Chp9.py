@@ -307,3 +307,101 @@ my_leaf.battery.describe_battery()
 # Get the range after upgrading the battery.
 my_leaf.battery.get_range()
 print("\n \n")
+
+#9-10. Imported Restaurant: Using your latest Restaurant class, store it in a module. 
+# Make a separate file that imports Restaurant. 
+# Make a Restaurant instance, and call one of Restaurant’s methods to show that the import statement is working properly.
+
+# 9-11. Imported Admin: Start with your work from Exercise 9-8 (page 173). Store the classes User, Privileges, and Admin in one module. 
+# Create a separate file, 
+# make an Admin instance, and call show_privileges() to show that everything is working correctly.
+
+# 9-12. Multiple Modules: Store the User class in one module, and store the Privileges and Admin classes in a separate module. 
+# In a separate file, create an Admin instance and call show_privileges() to show that everything is still working correctly.
+
+#Lab 9-13
+# ========================================= DICE =========================================
+print('Lab 9-13')
+import random
+
+class Die:
+    def __init__(self, sides=6):
+        self.sides = sides
+
+    def roll_die(self):
+        return random.randint(1, self.sides)
+
+# Creating a 6-sided die
+six_sided_die = Die()
+
+# Roll the 6-sided die 10 times
+print("Rolling a 6-sided die 10 times:")
+for _ in range(10):
+    result = six_sided_die.roll_die()
+    print(f"Roll: {result}")
+
+# Create a 10-sided die
+ten_sided_die = Die(sides=10)
+
+# Roll the 10-sided die 10 times
+print("\nRolling a 10-sided die 10 times:")
+for _ in range(10):
+    result = ten_sided_die.roll_die()
+    print(f"Roll: {result}")
+
+# Create a 20-sided die
+twenty_sided_die = Die(sides=20)
+
+# Roll the 20-sided die 10 times
+print("\nRolling a 20-sided die 10 times:")
+for _ in range(10):
+    result = twenty_sided_die.roll_die()
+    print(f"Roll: {result}")
+print("\n \n")
+
+#Lab 9-14
+# ========================================= LOTTERY =========================================
+print ("Lab 9-14")
+import random
+ticket = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 'A', 'B', 'C', 'D', 'E']
+
+# Randomly select 4 elements from the list
+selected_items = random.sample(ticket, 4)
+
+# Defining the winning combination of ticket
+winning_combination = [1, 2, 3, 4, 'A', 'B', 'C', 'D', 'E']
+
+# Check if the selected items match the winning combination
+if selected_items == winning_combination:
+    print("Congratulations! You have a winning ticket!")
+    print(f"Winning Combination: {selected_items}")
+else:
+    print("Sorry, your ticket did not win.")
+print("\n \n")
+
+#Lab 9-15
+# ========================================= LOTTERY ANALYSIS =========================================
+print("Lab 9-15")
+import random
+ticket = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'A', 'B', 'C', 'D', 'E']
+winning_combination = [1, 2, 3, 4, 'A', 'B', 'C', 'D', 'E']
+
+# Initialize a variable to count the number of attempts
+attempts = 0
+
+# Runing the loop until the ticket wins
+while True:
+    # Randomly select 4 elements from the list as your ticket
+    my_ticket = random.sample(ticket, 4)
+    
+    # Increment the attempts count
+    attempts += 1
+    
+    # Check if your ticket matches the winning combination
+    if my_ticket == winning_combination:
+        print("Congratulations! You have a winning ticket!")
+        print(f"Winning Combination: {my_ticket}")
+        print(f"Number of Attempts: {attempts}")
+        break
+
+
