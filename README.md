@@ -8,7 +8,7 @@ labnumber_chapternumber.py
 #Do not delete or change any code.
 for any corrections : you can also help by commenting out the code.
 
-                                Thanks...
+Thanks...
 
 
 
