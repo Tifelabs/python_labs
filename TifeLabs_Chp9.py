@@ -18,7 +18,7 @@ restaurant = Restaurant("Tife Foods", "Canadian")
 # Printing the attributes
 print(restaurant.restaurant_name)
 print(restaurant.cuisine_type)
-
+ 
 # Calling the methods
 restaurant.describe_restaurant()
 restaurant.open_restaurant()
@@ -318,6 +318,7 @@ print("\n \n")
 
 # 9-12. Multiple Modules: Store the User class in one module, and store the Privileges and Admin classes in a separate module. 
 # In a separate file, create an Admin instance and call show_privileges() to show that everything is still working correctly.
+
 
 #Lab 9-13
 # ========================================= DICE =========================================

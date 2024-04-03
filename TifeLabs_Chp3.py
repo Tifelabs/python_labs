@@ -23,6 +23,12 @@ print(f"I would like to own a speed {favourite_transport[1]}")
 print(f"I would like to own a super {favourite_transport[2]}")
 
 #Lab 3-4
+# ==================================== GUEST LIST ====================================
+'''
+ If you could invite anyone, living or deceased, to dinner, who would you invite? 
+ Make a list that includes at least three people you’d like to invite to dinner. 
+Then use your list to print a message to each person, inviting them to dinner.
+'''
 print("Lab 3 - 4")
 guest = ["Tooto","Gbenga","Ehiz"]
 invitation = "I would like to invite you for a dinner out"
